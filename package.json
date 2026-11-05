@@ -1,0 +1,31 @@
+{
+  "name": "raack-crm-automation",
+  "version": "1.0.0",
+  "description": "Raack Dance Studios WhatsApp CRM Integration",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --max-old-space-size=8192 server.js",
+    "test:send": "node test/sendTestMessages.js",
+    "test:parser": "node test/parserTest.js",
+    "test:media": "node test/mediaRetryTest.js",
+    "test:burst": "node test/rapidBurstTest.js"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  },
+  "dependencies": {
+    "@google/genai": "^2.21.0",
+    "axios": "^1.20.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "form-data": "^4.0.1",
+    "googleapis": "^134.0.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^7.13.0"
+  },
+  "allowScripts": {
+    "@google/genai@2.21.0": true,
+    "protobufjs@7.6.5": true
+  }
+}
